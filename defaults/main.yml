@@ -7,13 +7,13 @@ network_manage_devices: yes
 # Allow the network to restart
 #
 # This is only triggered, when the all interface file was changed
-network_allow_service_restart: yes
+network_allow_service_restart: no
 
 # How should changed interfaces be treated?
 #
 # Options:
 #   service - restart the network service for the interface
-#   interface - down & up the interface
+#   interface - down & up the interface # is not supported in Ansible 1.x yet
 #   nothing - do nothing
 #   * - undefined behavior
 network_restart_method: service
